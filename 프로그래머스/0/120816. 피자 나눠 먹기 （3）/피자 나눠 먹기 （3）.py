@@ -1,2 +1,5 @@
 def solution(slice, n):
-    return (n + slice - 1) // slice 
+    if n % slice == 0 :
+        return n // slice
+    else :
+        return (n // slice) + 1
